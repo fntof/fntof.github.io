@@ -6,8 +6,6 @@ ErrorDocument 404 404.html
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(www\.fntof\.github\.io)(:80)? [NC]
 RewriteRule ^(.*) https://fntof.github.io/$1 [R=301,L]
+# Default Page Change
 DirectoryIndex index.html       
 order deny,allow
-
-# Default Page Change
-DirectoryIndex index.html
