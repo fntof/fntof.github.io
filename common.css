@@ -10,14 +10,16 @@
 	text-size-adjust:100%;
 	-webkit-text-size-adjust:100%;
 	text-decoration:none;
+	color:#333;
+	text-shadow:1px 1px 2px #aaa;
 	list-style:none;
 }
-a{ font-weight:bold; }
-a:hover{text-decoration:underline;}
+a{ font-weight:bold; color:#0a0; }
+a:hover{ text-decoration:underline; }
 
 header h1{ font-size:70%; }
 header h1 + p{ font-size:200%; }
-header{width:100%; box-shadow:0px 2px 2px rgba(0,0,0,0.3);}
+header{ width:100%; box-shadow:0px 1px 1px rgba(0,0,0,0.3); z-index:100;}
 
 .wrap{ width:960px; margin:0 auto; }
 
