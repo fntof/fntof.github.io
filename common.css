@@ -21,7 +21,7 @@ header h1{ font-size:70%; }
 header h1 + p{ font-size:200%; }
 header{ width:100%; box-shadow:0px 1px 1px rgba(0,0,0,0.3); z-index:100;}
 
-.wrap{ width:960px; margin:0 auto; }
+.wrap{ max-width:960px; margin:0 auto; }
 
 .copyText{ text-align:center;  font-size:70%; }
 
