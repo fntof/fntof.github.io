@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>web製作の個人用メモ</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<script>
+	function copy() {
+		let text = document.getElementById('text');
+		text.select();
+		document.execCommand('copy');
+	}
+</script>
+</head>
+<body>
+<header>
+	<div class="wrap">
+		<h1><span id="headertitle">web製作の個人用メモ</span></h1>
+		<p>覚えるのメンドイ<p>
+	</div>
+</header>
+<nav><div class="wrap"></div></nav>
+<!-- <p><input type="text" value="" readonly></p> -->
+<section>
+	<div class="wrap">
+		<article id="content_main">
+			<h2>flex box</h2>
+			<h3>親要素 側</h3>
+
+			<section>
+				<h4>指定：blockかinlineか</h4>
+				<p><input type="text" value="display:flex;" onfocus="this.select();" readonly><input type="text" value="display:inline-flex;" onfocus="this.select();" readonly></p>
+			</section>
+
+			<section>
+				<h4>指定：縦colか横rowか、折り返すwrapか返さないno-か</h4>
+				<p><input type="text" value="flex-flow:row wrap;" onfocus="this.select();" readonly><input type="text" value="flex-flow:row no-wrap;" onfocus="this.select();" readonly></p>
+				<p><input type="text" value="flex-flow:row-reverse wrap;" onfocus="this.select();" readonly><input type="text" value="flex-flow:row-reverse no-wrap;" onfocus="this.select();" readonly></p>
+				<p><input type="text" value="flex-flow:column wrap;" onfocus="this.select();" readonly><input type="text" value="flex-flow:column no-wrap;" onfocus="this.select();" readonly></p>
+				<p><input type="text" value="flex-flow:column-reverse wrap;" onfocus="this.select();" readonly><input type="text" value="flex-flow:column-reverse no-wrap;" onfocus="this.select();" readonly></p>
+			</section>
+			
+			<section>
+				<h4>指定：水平方向 -開始寄り、終り寄り、中央寄り、両端寄り、均等割り</h4>
+				<p>
+					<input type="text" value="justify-content:flex-start;" onfocus="this.select();" readonly>
+					<input type="text" value="justify-content:flex-end;" onfocus="this.select();" readonly>
+					<input type="text" value="justify-content:center;" onfocus="this.select();" readonly>
+				</p>
+				<p>
+					<input type="text" value="justify-content:space-between;" onfocus="this.select();" readonly>
+					<input type="text" value="justify-content:space-around;" onfocus="this.select();" readonly>
+				</p>
+			</section>
+			
+			<section>
+				<h4>指定：垂直方向 -開始寄り、終り寄り、中央寄り、両端寄り、均等割り</h4>
+				<p>
+					<input type="text" value="align-items:stretch;" onfocus="this.select();" readonly>
+					<input type="text" value="align-items:flex-start;" onfocus="this.select();" readonly>
+					<input type="text" value="align-items:flex-end;" onfocus="this.select();" readonly>
+				</p>
+				<p>
+					<input type="text" value="align-items:center;" onfocus="this.select();" readonly>
+					<input type="text" value="align-items:baseline;" onfocus="this.select();" readonly>
+				</p>
+			</section>
+
+			<section>
+				<h4>指定：複数行</h4>
+				<p>
+					<input type="text" value="align-content:stretch;" onfocus="this.select();" readonly>
+					<input type="text" value="align-content:flex-start;" onfocus="this.select();" readonly>
+					<input type="text" value="align-content:flex-end;" onfocus="this.select();" readonly>
+				</p>
+				<p>
+					<input type="text" value="align-content:center;" onfocus="this.select();" readonly>
+					<input type="text" value="align-content:space-between;" onfocus="this.select();" readonly>
+					<input type="text" value="align-content:space-around;" onfocus="this.select();" readonly>
+				</p>
+			</section>
+
+			<h3>子要素 側</h3>
+			<section>
+				<h4>指定：順序の指定 マイナス指定〇</h4>
+				<p><input type="text" value="order:0;" onfocus="this.select();" readonly></p>
+			</section>
+
+			<section>
+				<h4>指定：grow(-利用×) shrink(-利用×) basis(width同等)-一括指定</h4>
+				<p><input type="text" value="flex: 0 1 auto;" onfocus="this.select();" readonly></p>
+			</section>
+
+			<section>
+				<h4>指定：子要素の垂直方向の揃え</h4>
+				<p>
+					<input type="text" value="align-self:auto;" onfocus="this.select();" readonly>
+					<input type="text" value="align-self:stretch;" onfocus="this.select();" readonly>
+					<input type="text" value="align-self:flex-start;" onfocus="this.select();" readonly>
+				</p>
+				<p>
+					<input type="text" value="align-self:flex-end;" onfocus="this.select();" readonly>
+					<input type="text" value="align-self:center;" onfocus="this.select();" readonly>
+					<input type="text" value="align-self:baseline;" onfocus="this.select();" readonly>
+				</p>
+			</section>
+
+		</article>
+	</div>
+</section>
+
+<footer>
+	<div class="wrap copyright">(c) from negative overflow since 2020</div>
+</footer>
+</body>
+</html>
