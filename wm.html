@@ -5,28 +5,34 @@
 <title>web製作の個人用メモ</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css.css">
-<script>
-	function copy() {
-		let text = document.getElementById('text');
-		text.select();
-		document.execCommand('copy');
-	}
-</script>
 </head>
 <body>
 <header>
 	<div class="wrap">
-		<h1><span id="headertitle">web製作の個人用メモ</span></h1>
-		<p>覚えるのメンドイ<p>
+		<h1>個人の雑記帳<br><span id="title">from negative overflow</span></h1>
+		<!-- twitter link -->
+		<div id="twilink"><a href="https://twitter.com/fntof?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @fntof</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 	</div>
 </header>
-<nav><div class="wrap"></div></nav>
+
+<nav>
+	<div class="wrap">
+		<a href="index.html">top</a>
+		<a href="wm.html">webMemo</a>
+	</div>
+</nav>
 <!-- <p><input type="text" value="" readonly></p> -->
-<section>
+<section id="content">
 	<div class="wrap">
 		<article id="content_main">
 			<h2>flex box</h2>
 			<h3>親要素 側</h3>
+
+			<ul id="log">
+				<li>
+					<p>test<input type="text" value="display:flex;" onfocus="this.select();" readonly></p>
+				</li>
+			</ul>
 
 			<section>
 				<h4>指定：blockかinlineか</h4>
@@ -110,8 +116,6 @@
 	</div>
 </section>
 
-<footer>
-	<div class="wrap copyright">(c) from negative overflow since 2020</div>
-</footer>
+<footer><div class="wrap copyright">(c) from negative overflow since 2019</div></footer>
 </body>
 </html>
