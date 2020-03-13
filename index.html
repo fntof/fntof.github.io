@@ -4,37 +4,52 @@
 <meta charset="UTF-8">
 <title>from negative overflow</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
 <header>
 	<div class="wrap">
-		<h1><a href="../">ネットの片隅で吐き続ける雑記帳<br><span>from negative overflow<span></a></h1>
-		<a href="https://twitter.com/fntof?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @fntof</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<h1>個人の雑記帳<br><span id="title">from negative overflow</span></h1>
+		<!-- twitter link -->
+		<div id="twilink"><a href="https://twitter.com/fntof?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @fntof</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 	</div>
 </header>
 
 <nav>
 	<div class="wrap">
-		<a href="">top</a>
-		<a href="">memo</a>
+		<a href="index.html">top</a>
+		<a href="wm.html">webMemo</a>
 	</div>
 </nav>
 
-<section>
+<section id="content">
 	<div class="wrap">
-		<article id="logtxt">
-			<h2>log&comment</h2>
-			<ul>
-				<li><time datetime="2019-04-26">2019-10-08</time>久々に更新。ツイッター側の不審な動きが気に入らなくなってきたので、ツイッターをサブとして使うべく色々と画策している。運用ルールが曖昧で…つまり、今も実は『違反ツイートを行った』としてアカウントロックを喰らったのだが(3度目）、この内容が本当によく理解できない。直前にアスペルガー障害の人の記事をRTして、付き合い方を考えた方が良いというツイートをしている。この内容、前後のツイートをつなげて見ればわかるのだけど、書いた人や上司に問題があって、『アスペルガー障害の人との付き合い方を、健常者が考えた方が良いだろう』というのは読み取れるとは思うのだが…というか、リプライ相手とはそれで通じているのだが、どうもそれがロック対象になったらしく削除しろと言われ、削除したにもかかわらず12時間の閲覧以外を停止させられているのだ(残10時間ほど）。意味が分らない。いくつか前のツイートの方が自分でも物騒な事を言っているので、そちらが対象になるなら解るのだが…。それに、削除したにも関わらずロックされてしまったのだ。他に該当ツイートが表示されていた覚えもないし、削除ボタンをおしたはずなのだが。とにもかくにも、こういったよく、分からない基準(理由は違反だと書かれても基準が…)でロックされるでのあれば、ツイッターに直接書く行為を避けた方が良いのだろう。いまこそマストドンかと考えてもみたが、マストドンも自鯖を建てない限り信用しきれない点はある。ここはもう少しgitで様子見をしてみようと思った。</li>
-				<li><time datetime="2019-04-26">2019-04-26</time>少しレイアウト変更。ツイッターのボタン付けた。ブートストラップ入れようかと思ったけど、そこまでするサイトじゃないし～と、適当なところまで手設計していく。</li>
-				<li><time datetime="2019-04-25">2019-04-25</time>サイト仮設。いまどき手打ちのサイトかよ…というわけでもなく、ただ、出先で急遽こしらえたから手打ちになってるだけ。今後はこっちをメインで更新していこうと思う。内容は思い付き次第かなあ。</li>
+		<article id="content_main">
+			<h2>淡々日記チャレンジ</h2>
+			<ul id="log">
+<!--
+				<li>
+					<h3><time datetime="日付">日付</time></h3>
+					<p>内容</p>
+				</li>
+-->
+				<li>
+					<h3><time datetime="2019-04-26">2019-10-08</time></h3>
+					<p>久々に更新。ツイッター側の不審な動きが気に入らなくなってきたので、ツイッターをサブとして使うべく色々と画策している。運用ルールが曖昧で…つまり、今も実は『違反ツイートを行った』としてアカウントロックを喰らったのだが(3度目）、この内容が本当によく理解できない。直前にアスペルガー障害の人の記事をRTして、付き合い方を考えた方が良いというツイートをしている。この内容、前後のツイートをつなげて見ればわかるのだけど、書いた人や上司に問題があって、『アスペルガー障害の人との付き合い方を、健常者が考えた方が良いだろう』というのは読み取れるとは思うのだが…というか、リプライ相手とはそれで通じているのだが、どうもそれがロック対象になったらしく削除しろと言われ、削除したにもかかわらず12時間の閲覧以外を停止させられているのだ(残10時間ほど）。意味が分らない。いくつか前のツイートの方が自分でも物騒な事を言っているので、そちらが対象になるなら解るのだが…。それに、削除したにも関わらずロックされてしまったのだ。他に該当ツイートが表示されていた覚えもないし、削除ボタンをおしたはずなのだが。とにもかくにも、こういったよく、分からない基準(理由は違反だと書かれても基準が…)でロックされるでのあれば、ツイッターに直接書く行為を避けた方が良いのだろう。いまこそマストドンかと考えてもみたが、マストドンも自鯖を建てない限り信用しきれない点はある。ここはもう少しgitで様子見をしてみようと思った。</p>
+				</li>
+				<li>
+					<h3><time datetime="2019-04-26">2019-04-26</time></h3>
+					<p>少しレイアウト変更。ツイッターのボタン付けた。ブートストラップ入れようかと思ったけど、そこまでするサイトじゃないし～と、適当なところまで手設計していく。</p>
+				</li>
+				<li>
+					<h3><time datetime="2019-04-25">2019-04-25</time></h3>
+					<p>サイト仮設。いまどき手打ちのサイトかよ…というわけでもなく、ただ、出先で急遽こしらえたから手打ちになってるだけ。今後はこっちをメインで更新していこうと思う。内容は思い付き次第かなあ。<p>
+				</li>
 			</ul>
 		</article>
 	</div>
 </section>
 
-<footer>
-	<div class="wrap copyText">(c) from negative overflow since 2019-04-25</footer></div>
+<footer><div class="wrap copyright">(c) from negative overflow since 2019</div></footer>
 </body>
 </html>
